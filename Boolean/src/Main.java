@@ -24,6 +24,10 @@ public class Main {
         System.out.println((a || b) && ((a == b) || a));
         System.out.println((true||b)&&((a == b)|| a));
         System.out.println((true||false)&&((true==false)|| true));
+        System.out.println((true)&& (true==false)|| true);
+        System.out.println((true)&& (true)||true);
+        System.out.println((true)&&(true));
+
 
         //Question 4
         a = false;
@@ -37,12 +41,20 @@ public class Main {
         System.out.println((false == false)&& (5*4) == (10 % 6)* 5);
         System.out.println((false == false)&& (20) == (10 % 6) * 5);
         System.out.println((false == false)&& (20) == (4)*5);
+        System.out.println((true)&& (20) == (4)*5);
+        System.out.println((true)&& (20) == 20);
 
         //Question 5
         System.out.println((Math.abs(-2) == 2) || (Math.sqrt(Math.pow(9,2)) <= 9 && (-4 <= 4)));
         System.out.println(((2) == 2) || (Math.sqrt(Math.pow(9,2)) <= 9 && (-4 <= 4)));
         System.out.println(((2) == 2) || (Math.sqrt(81) <= 9 && (-4 <= 4)));
         System.out.println(((2) == 2) || (9)<= 9 && (-4 <= 4));
-     
+        System.out.println((true)|| (9)<= 9 && (-4 <= 4));
+        System.out.println((true)|| (true) && (-4<=4)) ;
+        System.out.println((true)|| (true)&& (true));
+        System.out.println((true)&&(true));
+       
+
+
     }
 }
