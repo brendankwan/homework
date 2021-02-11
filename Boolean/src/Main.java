@@ -8,6 +8,8 @@ public class Main {
         System.out.println(((5*4) < (7 + 15)) && 5 < 7);
         System.out.println(((20)  < (7 + 15 ))&& 5 < 7);
         System.out.println(((20)  < (22)) && 5 < 7);
+        System.out.println(((true)&&(true)));
+        System.out.println(true);
 
         //Question 2
         x = 10;
@@ -18,6 +20,11 @@ public class Main {
         System.out.println(((10 == 20)|| (10 <z)) && (10*2+20)/5 > z);
         System.out.println(((10 == 20)|| (10 <30))&& (10*2+20)/5>30);
         System.out.println(((10 == 20)|| (10 <30))&& (20+20)/5>30);
+        System.out.println(((10 == 20)|| (10<30)) && (40)/5>30);
+        System.out.println(((10 == 20)|| (10<30)) && 8 > 30);
+        System.out.println(((false)|| (true)) && false);
+        System.out.println((false)&&(false));
+        System.out.println(false);
         //Question 3
         boolean a = true;
         boolean b = false;
@@ -27,6 +34,7 @@ public class Main {
         System.out.println((true)&& (true==false)|| true);
         System.out.println((true)&& (true)||true);
         System.out.println((true)&&(true));
+        System.out.println((false));
 
 
         //Question 4
@@ -43,6 +51,8 @@ public class Main {
         System.out.println((false == false)&& (20) == (4)*5);
         System.out.println((true)&& (20) == (4)*5);
         System.out.println((true)&& (20) == 20);
+        System.out.println((true)&& (true));
+        System.out.println(true);
 
         //Question 5
         System.out.println((Math.abs(-2) == 2) || (Math.sqrt(Math.pow(9,2)) <= 9 && (-4 <= 4)));
@@ -53,6 +63,7 @@ public class Main {
         System.out.println((true)|| (true) && (-4<=4)) ;
         System.out.println((true)|| (true)&& (true));
         System.out.println((true)&&(true));
+        System.out.println(true);
 
 
 
