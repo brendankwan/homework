@@ -7,7 +7,14 @@ public class Main {
         //paper beats rock
         //scissors beats paper
         //System.out.println((int)(Math.random()*3)*1);
-        String rock = 1;
+
+        String rock = "Rock";
+        String paper = " Paper";
+        String scissors = " Scissors";
+        String intro = rock + paper + scissors + "?";
+        
+        System.out.println(intro);
+
 
     }
 }
