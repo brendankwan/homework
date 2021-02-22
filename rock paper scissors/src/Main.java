@@ -21,7 +21,7 @@ public class Main {
             System.out.println("2 stands for paper.");
             System.out.println("3 stands for scissors.");
             System.out.println("Type in digit 1, 2 or 3 to start game.");
-            System.out.println("You may quit the game by typing e or start again by typing 1,2 or 3.");
+            System.out.println("Type e after you finished a round to quit or start again by typing 1,2 or 3.");
 
 
             int playerChoice = input.nextInt();
