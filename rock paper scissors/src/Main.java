@@ -95,7 +95,8 @@ public class Main {
                 System.out.println("Thank you for playing!");
             }
             else{
-                System.out.println("Not a proper command.");
+                System.out.println("Not a proper command, please restart the game.");
+
             }
 
 
