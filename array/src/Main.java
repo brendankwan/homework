@@ -11,12 +11,11 @@ public class Main {
         }
 
         int[] numbers2 = new int[10];
-
+        int total = 0;
         for (int i = 0; i < numbers2.length; i++) {
             numbers2[i] = (int) ((Math.random() * 100) + 1);
-            int total = i + numbers2[i];
             int average = total/numbers2.length;
-            System.out.println("Average:"+average);
+            System.out.println(total);
             System.out.println("index:" + i + " value:" + numbers2[i]);
         }
 
