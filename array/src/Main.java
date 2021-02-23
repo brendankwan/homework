@@ -14,7 +14,8 @@ public class Main {
 
         for (int i = 0; i < numbers2.length; i++) {
             numbers2[i] = (int) ((Math.random() * 100) + 1);
-            int average = numbers2[i]/numbers2.length;
+            int total = i + numbers2[i];
+            int average = total/numbers2.length;
             System.out.println("Average:"+average);
             System.out.println("index:" + i + " value:" + numbers2[i]);
         }
