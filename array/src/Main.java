@@ -17,10 +17,12 @@ public class Main {
             total = numbers2[i] + total;
             int average = total / numbers2.length;
             System.out.println("index:" + i + " value:" + numbers2[i]);
-            System.out.println(total);
-            System.out.println(average);
 
-        }
+
+        }  int average = total / numbers2.length;
+        System.out.println(total);
+        System.out.println(average);
+
 
 
     }
