@@ -30,7 +30,7 @@ public class Main {
         //reversing the order from last array
         int[] numbers3 = new int[10];
         for (int i = 0; i < numbers3.length; i++) {
-            numbers3[i] = numbers2[9-i];
+            numbers3[i] = numbers2[9-  i];
             System.out.println("index:" + i + "\tvalue:" + numbers3[i]);
 
         }
