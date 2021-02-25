@@ -9,7 +9,6 @@ public class Main {
             newarray[i] = array[i];
             newarray[newarray.length - 1] = value;
         }
-        newarray[newarray.length - 1] = value;
         //loop thru array
         //copy old array to new array
         //addon the number to last position
@@ -19,7 +18,12 @@ public class Main {
 
 
 
+
     public static void main(String[] args) {
+        int[]array = {1,2,3,4,5};
+        
+
+
 
 
     }
