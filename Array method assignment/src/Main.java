@@ -13,6 +13,7 @@ public class Main {
         //copy old array to new array
         //addon the number to last position
         return newarray;
+
     }
 
 
@@ -23,7 +24,9 @@ public class Main {
     int[]array = new int [5];
     for(int i = 0; i< array.length; i++){
      array[i] = (int)(Math.random()*4);
+        System.out.println("index:" + i + "value:" + array[i]);
     }
+
 
 
 
