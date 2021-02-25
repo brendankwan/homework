@@ -7,6 +7,7 @@ public class Main {
         int[] newarray = new int[array.length + 1];
         for(int i = 0; i < array.length; i++){
             newarray[i] = array[i];
+            newarray[newarray.length - 1] = value;
         }
         newarray[newarray.length - 1] = value;
         //loop thru array
@@ -15,7 +16,7 @@ public class Main {
         return newarray;
     }
 
-    
+
 
 
     public static void main(String[] args) {
