@@ -23,11 +23,13 @@ public class Main {
         return newarray2;
     }
     public static int[] insert(int[]array,int value,int indexPosition){
-        int [] newarray3 = new int [array.length +1];
-          newarray3[indexPosition]= value ;
+        int [] newarray3 = new int [array.length + 1];
+        newarray3[indexPosition]= value ;
+
 
         for (int i = 0; i < array.length; i++){
             newarray3[i] = array[i];
+
 
         }
 
