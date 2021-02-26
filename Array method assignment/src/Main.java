@@ -22,14 +22,15 @@ public class Main {
         }
         return newarray2;
     }
-    public static int[] insert(int[]array,int value){
+    public static int[] insert(int[]array,int value,int position){
         int [] newarray3 = new int [array.length +1];
+         newarray3[1]= value ;
 
         for (int i = 0; i < array.length; i++){
             newarray3[i] = array[i];
 
         }
-        newarray3[] = value;
+
         return newarray3;
     }
 
@@ -61,7 +62,7 @@ public class Main {
             array3[i] = i + 1 ;
             System.out.println("index:" + i + "value:" + array3[i]);
         }
-        int[]insert = insert(array3,3);
+        int[]insert = insert(array3,3,);
         for(int i = 0; i< insert.length; i++){
             array3[i] = i + 1;
             System.out.println("index:" + i + "value:" + insert[i]);
