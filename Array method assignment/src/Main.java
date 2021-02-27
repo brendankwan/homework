@@ -24,10 +24,22 @@ public class Main {
     }
     public static int[] insert(int[]array,int value,int indexPosition){
         int [] newarray3 = new int [array.length + 1];
-        newarray3[indexPosition]= value ;
+
         for (int i = 0; i < newarray3.length; i++){
-            newarray3[i] = array[i];
+
+           if(i == indexPosition ){
+             newarray3[indexPosition ]= value ;
+            }
+
+            else if(i > indexPosition ){
+                newarray3[i] = array[i - 1];
+            }
+            else {
+                newarray3[i] = array[i];
+            }
+
         }
+
         return newarray3;
     }
 
@@ -45,7 +57,7 @@ public class Main {
     }
     int [] array2 = new int[5];
     for (int i = 0;i < array.length;i++){
-        array2[i] = i+1;
+        //array2[i] = i+1;
         System.out.println("index:" + i + "value:" + array2[i]);
     }
     int[] delete = delete(array2);
@@ -59,9 +71,8 @@ public class Main {
             array3[i] = i + 1 ;
             System.out.println("index:" + i + "value:" + array3[i]);
         }
-        int[]insert = insert(array3,3, 1);
+        int[]insert = insert(array3,30, 2);
         for(int i = 0; i< insert.length; i++){
-            array3[i] = i +1;
             System.out.println("index:" + i + "value:" + insert[i]);
         }
 
