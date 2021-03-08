@@ -9,7 +9,19 @@ public class Student {
         this.courses = courses;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
 
+    public static int getStudentId() {
+        return studentId;
+    }
 
+    public String[] getCourses() {
+        return courses;
+    }
+    public String toString(){
+        return "Student id: " + studentId + "\tStudent name: " + firstName;
+    }
 
 }
