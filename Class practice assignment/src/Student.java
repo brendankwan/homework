@@ -23,5 +23,5 @@ public class Student {
     public String toString(){
         return "Student id: " + studentId + "\tStudent name: " + firstName;
     }
-    
+
 }
