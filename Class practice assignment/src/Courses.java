@@ -1,9 +1,9 @@
 public class Courses {
 
     private String subjectName;
-    private String studentGrade;
+    private int studentGrade;
 
-    public Courses(String subjectName,String studentGrade){
+    public Courses(String subjectName,int studentGrade){
         this.subjectName = subjectName;
         this.studentGrade = studentGrade;
     }
@@ -12,11 +12,11 @@ public class Courses {
         return subjectName;
     }
 
-    public String getStudentGrade() {
+    public int getStudentGrade() {
         return studentGrade;
     }
     public String toString(){
-        return "Subject name: " + subjectName;
+        return "Subject name: " + subjectName + "\tGrade" + studentGrade;
     }
 
 

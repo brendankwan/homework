@@ -2,7 +2,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Student joe = new Student( "joe",132);
+        Student joe = new Student( "joe");
         System.out.println(joe);
+
+
+
+
     }
 }

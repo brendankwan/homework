@@ -1,12 +1,16 @@
+import java.util.ArrayList;
+
 public class Student {
     private String firstName;
-    private static int studentId;
-    private String[] courses = new String[8];
+    private static int id =0 ;
+    private int studentId;
+    private ArrayList<Courses> list = new ArrayList<>();
 
-    public Student(String firstName, int studentId){
+
+    public Student(String firstName) {
         this.firstName = firstName;
-        this.studentId = studentId;
-        studentId++;
+        this.studentId = id++;
+
     }
 
     public String getFirstName() {
@@ -14,18 +18,38 @@ public class Student {
     }
 
     public static int getStudentId() {
-        return studentId;
+        return id;
+    }
+    public void addACourse(String subject, int studentGrade) {
+        Courses add = new Courses(subject, studentGrade);
+        if (list.size() < 8) {
+            list.add(add);
+        }
+    }
+    public int averageGrade(){
+        int total = 0;
+        for(int i = 0; i < list.size();i++){
+            total = total + list.get(i).getStudentGrade();
+        }
+        return total/ list.size();
+    }
+    public void showMyCourses(){
+        for(int i = 0;i<list.size();i++){
+            
+        }
     }
 
-    public String[] getCourses() {
-        return courses;
-    }
-    public String toString(){
-        return "Student id: " + studentId + "\tStudent name: " + firstName;
+
+
+    public String toString() {
+        return "Student id: " + id + "\tStudent name: " + firstName;
     }
 
-<<<<<<< HEAD
-=======
+    }
 
->>>>>>> 81a6d75631a90daed49ee199f41fee8e5d2b54d9
-}
+
+
+
+
+
+
