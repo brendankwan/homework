@@ -3,10 +3,10 @@ public class Student {
     private static int studentId;
     private String[] courses = new String[8];
 
-    public Student(String firstName, int studentId, String[]courses){
+    public Student(String firstName, int studentId){
         this.firstName = firstName;
-        this.studentId = studentId++;
-        this.courses = courses;
+        this.studentId = studentId;
+        studentId++;
     }
 
     public String getFirstName() {
@@ -23,5 +23,6 @@ public class Student {
     public String toString(){
         return "Student id: " + studentId + "\tStudent name: " + firstName;
     }
-    
+
+
 }
