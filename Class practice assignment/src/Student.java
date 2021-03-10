@@ -26,16 +26,11 @@ public class Student {
             list.add(add);
         }
     }
-    public int averageGrade(){
-        int total = 0;
-        for(int i = 0; i < list.size();i++){
-            total = total + list.get(i).getStudentGrade();
-        }
-        return total/ list.size();
-    }
+
+
     public void showMyCourses(){
         for(int i = 0;i<list.size();i++){
-            
+            System.out.println(list.get(i));
         }
     }
 
