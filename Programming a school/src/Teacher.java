@@ -1,6 +1,6 @@
 public class Teacher {
 
-    //fields of the teacher class.
+    //Fields of the teacher class.
     private String firstName;
     private String lastName;
     private String subject;
@@ -13,7 +13,7 @@ public class Teacher {
     }
 
 
-    //setters and getters.
+    //Setters and getters.
     public String getFirstName() {
         return firstName;
     }
@@ -40,6 +40,6 @@ public class Teacher {
 
     //When Teacher object is printed, shows name and subject.
     public String toString(){
-        return "Name: " + firstName + lastName + "\tSubject: " + subject;
+        return "Teacher name: " + firstName + lastName + "\tSubject: " + subject;
     }
 }
