@@ -13,13 +13,7 @@ public class Student {
 
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
 
-    public static int getStudentId() {
-        return id;
-    }
     public void addACourse(String subject, int studentGrade) {
         Courses add = new Courses(subject, studentGrade);
         if (list.size() < 8) {
@@ -33,8 +27,11 @@ public class Student {
         }
         return total/ list.size();
     }
+
+
     public void showMyCourses(){
         for(int i = 0;i<list.size();i++){
+            System.out.println(list.get(i));
 
         }
     }

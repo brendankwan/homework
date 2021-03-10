@@ -16,7 +16,7 @@ public class Courses {
         return studentGrade;
     }
     public String toString(){
-        return "Subject name: " + subjectName + "\tGrade" + studentGrade;
+        return "Subject name: " + subjectName + "\tGrade: " + studentGrade;
     }
 
 
