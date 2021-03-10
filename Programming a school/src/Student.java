@@ -1,6 +1,6 @@
 public class Student {
 
-    //fields
+    //Fields of the Student class.
     private String firstName;
     private String lastName;
     private int grade;
@@ -8,7 +8,7 @@ public class Student {
     private int num;
 
 
-    //making the student number unique by creating a random number and adding it to another random number.
+    //Making the student number unique by creating a random number and adding it to another random number.
     public Student(String firstName, String lastName, int grade){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,7 +16,7 @@ public class Student {
         this.studentNum += (int)(Math.random()*12345678);
 
     }
-    //setters and getters
+    //Setters and getters.
     public String getFirstName() {
         return firstName;
     }
@@ -60,7 +60,7 @@ public class Student {
 
 
 
-    //When student object print, shows name and grade.
+    //When student object is printed, shows name and grade.
     public String toString(){
 
         return "Name: " + firstName + lastName + "\tGrade: " + grade;
