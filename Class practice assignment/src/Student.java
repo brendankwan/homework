@@ -10,9 +10,7 @@ public class Student {
     public Student(String firstName) {
         this.firstName = firstName;
         this.studentId = id++;
-
     }
-
 
     public void addACourse(String subject, int studentGrade) {
         Courses add = new Courses(subject, studentGrade);
@@ -35,8 +33,6 @@ public class Student {
 
         }
     }
-
-
 
     public String toString() {
         return "Student id: " + id + "\tStudent name: " + firstName;
