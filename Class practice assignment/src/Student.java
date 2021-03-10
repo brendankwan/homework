@@ -13,18 +13,19 @@ public class Student {
 
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public static int getStudentId() {
-        return id;
-    }
+    
     public void addACourse(String subject, int studentGrade) {
         Courses add = new Courses(subject, studentGrade);
         if (list.size() < 8) {
             list.add(add);
         }
+    }
+    public int averageGrade(){
+        int total = 0;
+        for(int i = 0; i < list.size();i++){
+            total = total + list.get(i).getStudentGrade();
+        }
+        return total/ list.size();
     }
 
 
