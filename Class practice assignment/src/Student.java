@@ -13,7 +13,7 @@ public class Student {
 
     }
 
-    
+
     public void addACourse(String subject, int studentGrade) {
         Courses add = new Courses(subject, studentGrade);
         if (list.size() < 8) {
