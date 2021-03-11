@@ -40,6 +40,6 @@ public class Teacher {
 
     //When Teacher object is printed, shows name and subject.
     public String toString(){
-        return "Teacher name: " + firstName + lastName +"|"+ "\tSubject: " + subject + "|";
+        return "Teacher name: " + firstName + lastName + "\tSubject: " + subject + "|";
     }
 }
