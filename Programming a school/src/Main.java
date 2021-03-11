@@ -15,6 +15,7 @@ public class Main {
         System.out.println(windermere.teacherList);
         windermere.removeATeacher();
         //Teacher list after removing 1.
+        System.out.println("Removing 1 teacher from above.");
         System.out.println(windermere.teacherList);
         //Adding 10 students.
         windermere.addingAStudent("Mark","Dam",10);
@@ -31,6 +32,7 @@ public class Main {
         System.out.println(windermere.studentList);
         windermere.remove2Student();
         //Student list after removing 2.
+        System.out.println("Removing 2 students from above.");
         System.out.println(windermere.studentList);
 
 
