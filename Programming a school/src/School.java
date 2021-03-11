@@ -41,6 +41,7 @@ public class School {
     public void showingTeachers(){
         for(int i = 0; i < teacherList.size(); i++){
             System.out.println(teacherList.get(i));
+
         }
     }
     //Showing student list.
@@ -82,7 +83,7 @@ public class School {
     }
     //When School object is printed, shows location, name and age.
     public String toString(){
-        return "Location: " + location + "\tName: " + name + "\tAge: " + age;
+        return "School location: " + location +"|"+ "\tSchool name: " + name +"|"+ "\tAge of school: " + age + "|";
 
     }
 

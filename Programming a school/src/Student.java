@@ -63,6 +63,6 @@ public class Student {
     //When student object is printed, shows name and grade.
     public String toString(){
 
-        return "Student name: " + firstName + lastName + "\tGrade: " + grade;
+        return "Student name: " + firstName + lastName +"|"+ "\tGrade: " + grade+ "|";
     }
 }
