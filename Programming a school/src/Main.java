@@ -18,15 +18,15 @@ public class Main {
         System.out.println(windermere.teacherList);
         //Adding 10 students.
         windermere.addingAStudent("Mark","Dam",10);
-        windermere.addingAStudent("Steven","Gong",10);
-        windermere.addingAStudent("Brian","Le",10);
-        windermere.addingAStudent("Jason","Pham",10);
-        windermere.addingAStudent("Marcus","Jeh",10);
-        windermere.addingAStudent("Dorothy","Zhao",10);
+        windermere.addingAStudent("Steven","Gong",11);
+        windermere.addingAStudent("Brian","Le",12);
+        windermere.addingAStudent("Jason","Pham",9);
+        windermere.addingAStudent("Marcus","Jeh",8);
+        windermere.addingAStudent("Dorothy","Zhao",11);
         windermere.addingAStudent("Paige","Book",10);
-        windermere.addingAStudent("Plane","Air",10);
-        windermere.addingAStudent("John","Ny",10);
-        windermere.addingAStudent("Neil","Wario",10);
+        windermere.addingAStudent("Plane","Air",12);
+        windermere.addingAStudent("John","Ny",8);
+        windermere.addingAStudent("Neil","Wario",11);
         //Student list after adding.
         System.out.println(windermere.studentList);
         windermere.remove2Student();
