@@ -110,7 +110,7 @@ public class Time {
 
     }
     public String toString(){
-        return "" + hour + minute + second;
+        return "hour: " + addZeroToHour() + hour + "\tminute: " + addZeroToMinute() + minute + "\tseconds: " + addZeroToSecond() +second;
 
 
     }
