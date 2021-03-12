@@ -32,7 +32,28 @@ public class Time {
         if(hour<9){
             zero1 = "0";
         }
-        
+        else{
+            zero1= "";
+        }
+        return zero1;
+    }
+    public String addZeroToMinute(){
+        if(minute<9){
+            zero2 = "0";
+        }
+        else{
+            zero2 = "";
+        }
+        return zero2;
+    }
+    public String addZeroToSecond(){
+        if(second<9){
+            zero3= "0";
+        }
+        else{
+            zero3 = "";
+        }
+        return zero3;
     }
 
     public void setHour(int hour) {
