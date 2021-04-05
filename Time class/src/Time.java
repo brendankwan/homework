@@ -58,7 +58,7 @@ public class Time {
 
     public void setHour(int hour) {
 
-        if(hour >= 24){
+        if(hour > 23){
             count = (int)(hour/24);
             hour = hour - 24*count;
         }
@@ -66,7 +66,7 @@ public class Time {
     }
 
     public void setMinute(int minute) {
-        if(minute >= 60 ){
+        if(minute > 59 ){
             count = (int)(minute/60);
             minute = minute - 60*count;
             hour = hour + count;
@@ -75,7 +75,7 @@ public class Time {
     }
 
     public void setSecond(int second) {
-        if(second >= 60){
+        if(second > 59){
             count = (int)(second/60);
             minute = minute + count;
             second = second - 60*count;
@@ -91,19 +91,19 @@ public class Time {
 
     public void setTime(int hour, int minute, int second){
 
-        if(second >= 60){
+        if(second > 59){
             count = (int)(second/60);
             minute = minute + count;
             second = second - 60*count;
         }
         this.second = second;
-        if(minute >= 60 ){
+        if(minute > 59 ){
             count = (int)(minute/60);
             minute = minute - 60*count;
             hour = hour + count;
         }
         this.minute = minute;
-        if(hour >= 24){
+        if(hour > 23){
             count = (int)(hour/24);
             hour = hour - 24*count;
         }
@@ -117,17 +117,41 @@ public class Time {
     }
 
     public Time nextSecond(){
+        Time time = new Time(hour,minute,second);
+
         second = second + 1;
-        if(second>60){
-            minute ++;
+        if(second>59){
+            count = (int)(second/60);
+            second = second - 60*count;
+            minute = minute + count ;
         }
+        if(minute>59){
+            count = (int)(minute/60);
+            hour = hour + count;
+            minute = minute - 60*count;
+        }
+        if(hour>23){
+            count = (int)(hour/24);
+            hour  = hour - 60*count;
+        }
+        return time;
+
 
     }
     public Time previousSecond(){
+Time time = new Time(hour,minute,second);
     second = second - 1;
     if (second < 0){
-        minute --;
+        minute = minute - 1;
         second = 59;
     }
+    if(minute<0){
+        minute = 59;
+        hour = hour - 1;
+    }
+    if(hour<0){
+        hour = 23;
+    }
+return time;
     }
 }
