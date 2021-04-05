@@ -90,7 +90,7 @@ public class Time {
 
 
     public void setTime(int hour, int minute, int second){
-    Time time = new Time(hour,minute,second);
+
         if(second >= 60){
             count = (int)(second/60);
             minute = minute + count;
