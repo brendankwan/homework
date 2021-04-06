@@ -30,14 +30,28 @@ public class Main {
     //Code your solution to problem number 3 here
     static String problemThree(String s){
         //your code here
+
         int num = 0;
+        int num2 ;
+        String store  = "";
         for(int i = 0; i<s.length()-1;i++){
             if(s.charAt(i)>s.charAt(i+1)){
-                num = i;
+                num = i + 1;
+               if(store == ""){
+                store = s.substring(0,1);
+               }
             }
-            else
+            else {
+                num2 = i + 2;
+                String substring = s.substring(num,num2);
+                if(substring.length()>store.length()) {
+                    store = substring;
+                }
+
+            }
 
         }
+        s = store;
         return s;
     }
     public static void main(String[] args) {

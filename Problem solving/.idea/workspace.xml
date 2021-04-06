@@ -98,7 +98,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="JUnit.TestClass.testTwo">
+  <component name="RunManager" selected="JUnit.TestClass.testThree">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -185,9 +185,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass.testThree" />
         <item itemvalue="JUnit.TestClass.testTwo" />
         <item itemvalue="JUnit.TestClass.testOne" />
-        <item itemvalue="JUnit.TestClass.testThree" />
         <item itemvalue="JUnit.TestClass" />
       </list>
     </recent_temporary>
@@ -209,7 +209,7 @@
       <workItem from="1532533851314" duration="605000" />
       <workItem from="1533242072100" duration="602000" />
       <workItem from="1617669024518" duration="841000" />
-      <workItem from="1617680842299" duration="4665000" />
+      <workItem from="1617680842299" duration="13485000" />
     </task>
     <servers />
   </component>
@@ -265,6 +265,20 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>30</line>
+          <properties class="Main" method="problemThree">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/StringTests.java">
