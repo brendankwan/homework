@@ -17,12 +17,27 @@ public class Main {
     static int problemTwo(String s){
         int answer = 0;
         //your code here
-
+        String bob = "bob";
+        int length = s.length();
+        for(int i = 0; i <length-2; i ++){
+            String letter = s.substring(i,i+3);
+            if(letter.equals(bob)){
+                answer++;
+            }
+        }
         return answer;
     }
     //Code your solution to problem number 3 here
     static String problemThree(String s){
         //your code here
+        int num = 0;
+        for(int i = 0; i<s.length()-1;i++){
+            if(s.charAt(i)>s.charAt(i+1)){
+                num = i;
+            }
+            else
+
+        }
         return s;
     }
     public static void main(String[] args) {

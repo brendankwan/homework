@@ -98,20 +98,22 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="JUnit.TestClass.testOne">
+  <component name="RunManager" selected="JUnit.TestClass.testTwo">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,10 +185,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass.testTwo" />
         <item itemvalue="JUnit.TestClass.testOne" />
         <item itemvalue="JUnit.TestClass.testThree" />
         <item itemvalue="JUnit.TestClass" />
-        <item itemvalue="JUnit.TestClass.testTwo" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +209,7 @@
       <workItem from="1532533851314" duration="605000" />
       <workItem from="1533242072100" duration="602000" />
       <workItem from="1617669024518" duration="841000" />
+      <workItem from="1617680842299" duration="4665000" />
     </task>
     <servers />
   </component>
