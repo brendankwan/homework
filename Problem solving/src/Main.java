@@ -17,7 +17,7 @@ public class Main {
     static int problemTwo(String s){
         int answer = 0;
         //your code here
-        
+
         return answer;
     }
     //Code your solution to problem number 3 here
