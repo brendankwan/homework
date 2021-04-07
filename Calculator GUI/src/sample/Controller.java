@@ -52,6 +52,8 @@ public class Controller {
         addNumber("0");
     }
     public void addNumber(String num) {
+        
+
         String digits = txtScreen.getText()+ num;
         txtScreen.setText(digits);
         System.out.println(digits);
@@ -60,6 +62,6 @@ public class Controller {
 
     public void clearAll(ActionEvent actionEvent) {
         txtScreen.clear();
-        
+        txtScreen.setText("0");
     }
 }
