@@ -51,6 +51,12 @@ public class Controller {
     public void printZero(ActionEvent actionEvent) {
         addNumber("0");
     }
+    public void printDecimal(ActionEvent actionEvent) {
+
+    }
+
+
+
     public void addNumber(String num) {
         if(txtScreen.getText().equals("0")){
             txtScreen.setText(num);
@@ -66,5 +72,10 @@ public class Controller {
     public void clearAll(ActionEvent actionEvent) {
         txtScreen.clear();
         txtScreen.setText("0");
+    }
+
+
+    public void Addition(ActionEvent actionEvent) {
+        numbers.add(txtScreen.getText());
     }
 }
