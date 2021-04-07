@@ -52,11 +52,14 @@ public class Controller {
         addNumber("0");
     }
     public void addNumber(String num) {
-        
-
-        String digits = txtScreen.getText()+ num;
-        txtScreen.setText(digits);
-        System.out.println(digits);
+        if(txtScreen.getText().equals("0")){
+            txtScreen.setText(num);
+        }
+        else {
+            String digits = txtScreen.getText() + num;
+            txtScreen.setText(digits);
+            System.out.println(digits);
+        }
 
     }
 
