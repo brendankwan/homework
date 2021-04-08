@@ -7,7 +7,8 @@ import java.util.ArrayList;
 
 public class Controller {
 
-
+    public int answer;
+    public int number;
     public TextField txtScreen;
     public ArrayList <String> numbers = new ArrayList<>();
     public ArrayList <String> operators = new ArrayList<>();
@@ -52,7 +53,7 @@ public class Controller {
         addNumber("0");
     }
     public void printDecimal(ActionEvent actionEvent) {
-
+                addNumber(".");
     }
 
 
@@ -72,10 +73,14 @@ public class Controller {
     public void clearAll(ActionEvent actionEvent) {
         txtScreen.clear();
         txtScreen.setText("0");
+        numbers.clear();
     }
 
 
     public void Addition(ActionEvent actionEvent) {
+        number = Integer.parseInt(txtScreen.getText());
         numbers.add(txtScreen.getText());
+        answer = number + Integer.parseInt() ;
+        System.out.println(answer);
     }
 }
