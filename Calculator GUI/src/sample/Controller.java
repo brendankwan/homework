@@ -1,6 +1,7 @@
 package sample;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 import java.util.ArrayList;
@@ -9,9 +10,12 @@ public class Controller {
 
     public int answer;
     public int number;
+    public int calculation;
     public TextField txtScreen;
     public ArrayList <String> numbers = new ArrayList<>();
     public ArrayList <String> operators = new ArrayList<>();
+
+    public Button buttonAdd;
 
     public void printSeven(ActionEvent actionEvent) {
         addNumber("7");
@@ -58,6 +62,7 @@ public class Controller {
 
 
 
+
     public void addNumber(String num) {
         if(txtScreen.getText().equals("0")){
             txtScreen.setText(num);
@@ -74,13 +79,20 @@ public class Controller {
         txtScreen.clear();
         txtScreen.setText("0");
         numbers.clear();
+        operators.clear();
+
+
     }
 
 
-    public void Addition(ActionEvent actionEvent) {
-        number = Integer.parseInt(txtScreen.getText());
-        numbers.add(txtScreen.getText());
-        answer = number + Integer.parseInt() ;
-        System.out.println(answer);
+    public void Operation(ActionEvent actionEvent) {
+      switch(calculation){
+          case 1:
+              answer = number + Integer.parseInt(txtScreen.getText());
+              txtScreen.setText(Integer.toString(answer));
+              break;
+      }
     }
+
+
 }
