@@ -120,14 +120,20 @@ public class Controller {
     }
 
     public void Subtraction(ActionEvent actionEvent) {
-        
+        number = Integer.parseInt(txtScreen.getText());
+        calculation = 2;
+        txtScreen.setText("");
     }
 
     public void Multiplication(ActionEvent actionEvent) {
-
+        number = Integer.parseInt(txtScreen.getText());
+        calculation = 3;
+        txtScreen.setText("");
     }
 
     public void Division(ActionEvent actionEvent) {
-
+        number = Integer.parseInt(txtScreen.getText());
+        calculation = 4;
+        txtScreen.setText("");
     }
 }
