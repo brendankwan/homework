@@ -12,7 +12,7 @@ public class Controller {
     public int number;
     public int calculation;
     public TextField txtScreen;
-    public ArrayList <String> numbers = new ArrayList<>();
+    public ArrayList <Integer> numbers = new ArrayList<>();
     public ArrayList <String> operators = new ArrayList<>();
 
     public Button buttonAdd;
@@ -89,6 +89,8 @@ public class Controller {
       switch(calculation){
           case 1:
               answer = number + Integer.parseInt(txtScreen.getText());
+              numbers.add(number);
+              numbers.add(Integer.parseInt(txtScreen.getText()));
               txtScreen.setText(Integer.toString(answer));
               break;
           case 2:
@@ -97,6 +99,7 @@ public class Controller {
               break;
           case 3:
               answer = number * Integer.parseInt(txtScreen.getText());
+
               txtScreen.setText(Integer.toString(answer));
               break;
           case 4:
