@@ -85,14 +85,49 @@ public class Controller {
     }
 
 
-    public void Operation(ActionEvent actionEvent) {
+    public void doing_Calculations() {
       switch(calculation){
           case 1:
               answer = number + Integer.parseInt(txtScreen.getText());
               txtScreen.setText(Integer.toString(answer));
               break;
+          case 2:
+              answer = number - Integer.parseInt(txtScreen.getText());
+              txtScreen.setText(Integer.toString(answer));
+              break;
+          case 3:
+              answer = number * Integer.parseInt(txtScreen.getText());
+              txtScreen.setText(Integer.toString(answer));
+              break;
+          case 4:
+              answer = number / Integer.parseInt(txtScreen.getText());
+              txtScreen.setText(Integer.toString(answer));
+              break;
+
       }
     }
 
 
+    public void recallOperation(ActionEvent actionEvent) {
+        doing_Calculations();
+    }
+
+    public void Addition(ActionEvent actionEvent) {
+        number = Integer.parseInt(txtScreen.getText());
+        calculation = 1;
+        txtScreen.setText("");
+
+    }
+
+    public void Subtraction(ActionEvent actionEvent) {
+        
+    }
+
+    public void Multiplication(ActionEvent actionEvent) {
+
+    }
+
+    public void Division(ActionEvent actionEvent) {
+
+    }
 }

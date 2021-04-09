@@ -48,7 +48,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="buttonDivide" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="/">
+            <Button fx:id="buttonDivide" mnemonicParsing="false" onAction="#Division" prefHeight="50.0" prefWidth="50.0" text="/">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
@@ -84,7 +84,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="buttonMultiply" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="*">
+            <Button fx:id="buttonMultiply" mnemonicParsing="false" onAction="#Multiplication" prefHeight="50.0" prefWidth="50.0" text="*">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
@@ -120,7 +120,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="buttonSubtract" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="-">
+            <Button fx:id="buttonSubtract" mnemonicParsing="false" onAction="#Subtraction" prefHeight="50.0" prefWidth="50.0" text="-">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
@@ -148,7 +148,7 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="buttonEqual" mnemonicParsing="false" onAction="#Operation" prefHeight="50.0" prefWidth="50.0" text="=">
+            <Button fx:id="buttonEqual" mnemonicParsing="false" onAction="#recallOperation" prefHeight="50.0" prefWidth="50.0" text="=">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
@@ -156,7 +156,7 @@
                   <Font name="System Bold" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="buttonAdd" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="+">
+            <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#Addition" prefHeight="50.0" prefWidth="50.0" text="+">
                <HBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </HBox.margin>
