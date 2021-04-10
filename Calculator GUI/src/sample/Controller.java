@@ -10,7 +10,7 @@ public class Controller {
 
     public int answer;
     public int number;
-    public int number2;
+
     public int calculation;
     public TextField txtScreen;
     public ArrayList <Integer> numbers = new ArrayList<>();
@@ -88,7 +88,7 @@ public class Controller {
       switch(calculation){
           case 1:
               answer = number + Integer.parseInt(txtScreen.getText());
-              numbers.add(number);
+
 
               txtScreen.setText(Integer.toString(answer));
               break;
@@ -102,17 +102,9 @@ public class Controller {
               txtScreen.setText(Integer.toString(answer));
               break;
           case 4:
-              number2 = Integer.parseInt(txtScreen.getText());
-              answer = number / number2;
+              answer = number / Integer.parseInt(txtScreen.getText());
               txtScreen.setText(Integer.toString(answer));
-              if(number2 == 0 ){
-                  
-
-
-
-              }
               break;
-
 
 
       }
@@ -127,7 +119,7 @@ public class Controller {
 
         number = Integer.parseInt(txtScreen.getText());
         calculation = 1;
-        txtScreen.setText("" + "+");
+        txtScreen.setText("");
 
     }
 
