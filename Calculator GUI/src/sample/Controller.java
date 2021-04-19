@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-import java.util.ArrayList;
+
 
 public class Controller {
 
@@ -13,8 +13,6 @@ public class Controller {
     public int number2;
     public int calculation;
     public TextField txtScreen;
-    public ArrayList <Integer> numbers = new ArrayList<>();
-    public ArrayList <String> operators = new ArrayList<>();
 
     public Button buttonAdd;
 
@@ -79,8 +77,6 @@ public class Controller {
     public void clearAll(ActionEvent actionEvent) {
         txtScreen.clear();
         txtScreen.setText("0");
-        numbers.clear();
-        operators.clear();
     }
 
 
@@ -88,8 +84,6 @@ public class Controller {
       switch(calculation){
           case 1:
               answer = number + Integer.parseInt(txtScreen.getText());
-              numbers.add(number);
-
               txtScreen.setText(Integer.toString(answer));
               break;
           case 2:
@@ -98,7 +92,6 @@ public class Controller {
               break;
           case 3:
               answer = number * Integer.parseInt(txtScreen.getText());
-
               txtScreen.setText(Integer.toString(answer));
               break;
           case 4:
@@ -121,7 +114,7 @@ public class Controller {
 
         number = Integer.parseInt(txtScreen.getText());
         calculation = 1;
-        txtScreen.setText("" + "+");
+        txtScreen.setText("");
 
     }
 
