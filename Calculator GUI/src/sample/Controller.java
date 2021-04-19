@@ -105,12 +105,6 @@ public class Controller {
               number2 = Integer.parseInt(txtScreen.getText());
               answer = number / number2;
               txtScreen.setText(Integer.toString(answer));
-              if(number2 == 0 ){
-                  
-
-
-
-              }
               break;
 
 
