@@ -6,7 +6,14 @@ import java.util.ArrayList;
 public class Main {
 
 
-    public
+    public static Object checking(String word, ArrayList<String>words){
+        for(int i = 0; i < words.size(); i ++){
+            if(){
+
+            }
+        }
+
+    }
 
     public static void main(String[] args) throws IOException {
         ArrayList<String> sentence = new ArrayList<>();
