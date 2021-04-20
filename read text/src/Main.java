@@ -1,16 +1,16 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 
 public class Main {
 
 
     public static Object checking(String word, ArrayList<String>words){
-        for(int i = 0; i < words.size(); i ++){
-            if(){
 
-            }
+        for(int i = 0; i < words.size(); i ++){
+            if(words.get(i).contains(word))
         }
 
     }
