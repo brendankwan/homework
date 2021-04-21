@@ -7,30 +7,21 @@ import java.util.ArrayList;
 public class Main {
 
 
-    public static Object checking(String word, ArrayList<String>words){
-
-        for(int i = 0; i < words.size(); i ++){
-            if(words.get(i).contains(word))
-        }
-
-    }
 
     public static void main(String[] args) throws IOException {
-        ArrayList<String> sentence = new ArrayList<>();
+        ArrayList<String> lines = new ArrayList<>();
+        ArrayList<String> sentences = new ArrayList<>();
         ArrayList<Integer> indexPosition = new ArrayList<>();
         FileReader fr = new FileReader("ProgrammingHistory.txt");
         BufferedReader br = new BufferedReader(fr);
         String line;
         while ((line = br.readLine()) != null){
-            sentence.add(line);
+            lines.add(line);
         }
         br.close();
-        for (int i = 0; i < sentence.size(); i ++){
-            System.out.println(sentence.get(i));
+        for (int i = 0; i < lines.size(); i ++){
+            System.out.println("Copied: " + lines.get(i));
         }
-
-
-
 
 
 
