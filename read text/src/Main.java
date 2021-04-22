@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Main {
 
-
+    public static
 
     public static void main(String[] args) throws IOException {
         ArrayList<String> lines = new ArrayList<>();
